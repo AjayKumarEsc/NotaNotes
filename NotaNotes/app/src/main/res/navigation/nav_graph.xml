@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragments">
+
+    <fragment
+        android:id="@+id/homeFragments"
+        android:name="com.example.notanotes.fragments.HomeFragments"
+        android:label="HomeFragments" >
+        <action
+            android:id="@+id/action_homeFragments_to_addNotesFragments"
+            app:destination="@id/addNotesFragments" />
+        <action
+            android:id="@+id/action_homeFragments_to_editNotesFragments"
+            app:destination="@id/editNotesFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNotesFragments"
+        android:name="com.example.notanotes.fragments.AddNotesFragments"
+        android:label="AddNotesFragments" >
+        <action
+            android:id="@+id/action_addNotesFragments_to_homeFragments"
+            app:destination="@id/homeFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNotesFragments"
+        android:name="com.example.notanotes.fragments.EditNotesFragments"
+        android:label="EditNotesFragments" >
+        <action
+            android:id="@+id/action_editNotesFragments_to_homeFragments"
+            app:destination="@id/homeFragments" />
+
+        <argument
+            android:name="note"
+            app:argType="com.example.notanotes.model.Note"
+            app:nullable="true"/>
+
+    </fragment>
+</navigation>
