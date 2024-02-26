@@ -1,2 +1,2 @@
 # NotaNotes
- Notes Application
+The "NotaNotes" project is all about making a simple and easy-to-use app for taking notes on Android phones. It has a clean design and lets users make notes quickly. The app will store notes using a special library called Room. Users can add, edit, and delete their notes and organize them neatly. NotaNotes aims to be the go-to solution for anyone who wants a hassle-free way to jot down and keep track of their ideas on their Android device.
